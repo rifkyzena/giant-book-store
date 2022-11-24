@@ -15,19 +15,40 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Novel'
+                'name' => 'Fiction'
             ],
             [
-                'name' => 'Majalah'
+                'name' => 'Mystery'
             ],
             [
-                'name' => 'Novel'
+                'name' => 'Thriller'
             ],
             [
-                'name' => 'Novel'
+                'name' => 'Romance'
             ],
             [
-                'name' => 'Novel'
+                'name' => 'History'
+            ],
+            [
+                'name' => 'Non-Fiction'
+            ],
+            [
+                'name' => 'Computer'
+            ],
+            [
+                'name' => 'Technology'
+            ],
+            [
+                'name' => 'Motivation'
+            ],
+            [
+                'name' => 'Psychology'
+            ],
+            [
+                'name' => 'Personal Growth'
+            ],
+            [
+                'name' => 'Productivity'
             ],
         ];
     }
