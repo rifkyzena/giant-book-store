@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('pages.landing');
+        $data = Book::find(1);
+        dd($data->categories());
+        return view('pages.home');
     }
 }

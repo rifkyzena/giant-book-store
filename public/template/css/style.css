@@ -780,12 +780,12 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #ffffff;
+  background-color: #336B87;
   text-align: center;
 }
 
 .footer_section p {
-  color: #063547;
+  color: white;
   padding: 25px 0;
   margin: 0;
 }
