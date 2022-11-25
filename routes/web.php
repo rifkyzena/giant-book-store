@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', HomeController::class);
+Route::get('kategori/{params}', [CategoryController::class, 'search'])->name('kategori.search');

@@ -9,8 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $data = Book::find(1);
-        dd($data->categories());
-        return view('pages.home');
+        $data = Book::paginate(8);
+        return view('pages.home', compact('data'));
     }
 }

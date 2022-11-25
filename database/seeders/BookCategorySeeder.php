@@ -135,6 +135,66 @@ class BookCategorySeeder extends Seeder
                 'book_id' => 10,
                 'category_id' => 12
             ],
+            [
+                'book_id' => 11,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 11,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 11,
+                'category_id' => 8
+            ],
+            [
+                'book_id' => 12,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 12,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 12,
+                'category_id' => 8
+            ],
+            [
+                'book_id' => 13,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 13,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 13,
+                'category_id' => 8
+            ],
+            [
+                'book_id' => 14,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 14,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 14,
+                'category_id' => 8
+            ],
+            [
+                'book_id' => 15,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 15,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 15,
+                'category_id' => 8
+            ],
         ];
         foreach ($book_categories as $bc) {
             BookCategory::create($bc);
