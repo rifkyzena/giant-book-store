@@ -11,7 +11,7 @@
             <div class="row p-2">
                 @foreach ($data as $d)
                 <div class="col-3 mb-3">
-                    <div class="card border-dark">
+                    <div class="card border-dark p-3">
                         <img src="{{ asset('storage/'. $d->image) }}" height="550" class="card-img-top"
                             alt="{{ $d->name }}">
                         <div class="card-body">

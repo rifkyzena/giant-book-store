@@ -16,13 +16,13 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('kategori.search', 'all') }}">Categories</a>
+                <a class="nav-link" href="{{ route('category.search', 'all') }}">Categories</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Publisher</a>
+                <a class="nav-link" href="{{ route('publisher.index') }}">Publisher</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="{{ route('contact.index') }}">Contact</a>
             </li>
         </ul>
     </div>

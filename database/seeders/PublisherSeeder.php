@@ -18,23 +18,23 @@ class PublisherSeeder extends Seeder
             [
                 'name' => 'Penerbit Haru',
                 'address' => 'Jl. Sulawesi No.17, Nurmanan, Mangkujayan, Ponorogo, Jawa Timur',
-                'phone' =>  '0352481444',
+                'phone' =>  '(0352) 481444',
                 'email' => 'penerbitharu@gmail.com ',
-                'image' => 'publishers/penerbit-haru.jpg',
+                'image' => 'publishers/penerbit-haru.png',
             ],
             [
                 'name' => 'Penerbit Elex Media Komputindo',
-                'address' => 'Gedung Kompas Gramedia Lt. 2 Jl. Palmerah Barat 29-31 Jakarta 10270',
-                'phone' =>  '02153650110',
+                'address' => 'Grup Perdagangan dan Penerbitan Kelompok Kompas-Gramedia Gedung Kompas Gramedia Lt. 2',
+                'phone' =>  '021-53650110',
                 'email' => 'redaksi@elex.media',
-                'image' => 'publishers/penerbit-elex-media-komputindo.jpg',
+                'image' => 'publishers/penerbit-elex-media-komputindo.png',
             ],
             [
                 'name' => 'Penerbit Andi',
-                'address' => 'Jl. Beo No.38-40, Mrican, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281',
-                'phone' =>  '085729900700',
+                'address' => 'Jl. Beo No.38-40, Mrican, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281',
+                'phone' =>  '0857 2990 0700',
                 'email' => 'andipublishercom@yahoo.com',
-                'image' => 'publishers/penerbit-andi.jpg',
+                'image' => 'publishers/penerbit-andi.png',
             ],
         ];
 

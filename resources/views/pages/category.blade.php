@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="heading_container heading_center p-5">
         <h2>
-            Book Category
+            Category List
         </h2>
     </div>
     <div class="row">
@@ -14,12 +14,12 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
-                        <a href="{{ route('kategori.search', 'all') }}"
+                        <a href="{{ route('category.search', 'all') }}"
                             class="list-group-item list-group-item-action {{ Request::segment(2) == 'all' ? 'bg-primary text-white' : '' }}">
                             All
                         </a>
                         @foreach ($data as $d)
-                        <a href="{{ route('kategori.search', strtolower($d->name)) }}"
+                        <a href="{{ route('category.search', strtolower($d->name)) }}"
                             class="list-group-item {{ Request::segment(2) == strtolower($d->name) ? 'bg-primary text-white' : '' }}">
                             {{ $d->name }}
                         </a>
@@ -34,7 +34,7 @@
                     <div class="row p-2">
                         @forelse ($book_data as $d)
                         <div class="col-4 mb-3">
-                            <div class="card border-dark">
+                            <div class="card border-dark p-3">
                                 <img src="{{ asset('storage/'. $d->image) }}" height="550" class="card-img-top"
                                     alt="{{ $d->name }}">
                                 <div class="card-body">
