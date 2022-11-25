@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -18,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('book/{id}', [BookController::class, 'show'])->name('book.show');
 Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
 Route::get('publisher', [PublisherController::class, 'index'])->name('publisher.index');
+Route::get('publisher/{id}', [PublisherController::class, 'show'])->name('publisher.show');
 Route::get('category/{params}', [CategoryController::class, 'search'])->name('category.search');

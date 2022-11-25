@@ -15,7 +15,7 @@
                         alt="{{ $d->name }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ $d->name }}</h5>
-                        <button class="btn btn-primary">Detail</button>
+                        <a href="{{ route('publisher.show', $d->id) }}" class="btn btn-primary">Detail</a>
                     </div>
                 </div>
             </div>

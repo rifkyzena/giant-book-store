@@ -29,7 +29,7 @@
                                     @endforeach
                                 </small>
                             </p>
-                            <button class="btn btn-primary">Detail</button>
+                            <a href="{{ route('book.show', $d->id) }}" class="btn btn-primary">Detail</a>
                         </div>
                     </div>
                 </div>
