@@ -21,7 +21,7 @@
             </div>
             @empty
             <div class="col-12 d-flex justify-content-center">
-                <h5>Tidak adan data publisher</h5>
+                <h5>Tidak ada data publisher</h5>
             </div>
             @endforelse
         </div>
