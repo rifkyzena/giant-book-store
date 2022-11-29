@@ -1,64 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Giant Book Store
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Giant Book Store is a simple web application for seeing a store's books. As a user, you can look what book is available in the store by visiting the home page, publisher page, or by choosing a category, the web application will then redirect you to a page where only books associated with that category is shown, for example if you choose Fantasy category, the application will only show you Fantasy-genre books. You can also see the book details, such as the publisher, author name, synopsis, and the year the book was published. This web application was made by HTML and CSS with PHP logic and Laravel 8 Framework that uses MySQL to connect to the database. 
 
-## About Laravel
+Giant Book Store was built with Model View Controller (MVC) architecture.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Startup Guide
+1. Install XAMPP, then start Apache and MySQL module (make sure these two modules are active, otherwise the application can't connect to the database and won't start).
+2. Go to http://localhost/phpmyadmin/.
+3. Create a database named 'db_book'.
+4. Open the project's directory in a terminal and run the command: 
+    - *php artisan migrate:fresh --seed* (to drop all tables then migrate new tables to the database, and seed the database from the seeder files)
+    - *php artisan serve*
+5. Open the link given after the last command to open the web application.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Below is the preview and/or flow of the application:
+# (1/5) Home Page
+![image](https://user-images.githubusercontent.com/55536824/204484065-eb59aecd-5e9e-4c06-808f-0ad5430da09f.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+This page is where the user will land after clicking the link given after the php artisan serve command. Here, the user will be shown the list of all books available in Giant Book Store. Books will be listed by their title and their author. Users can navigate to Book Detail page by clicking the book title in the lists.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# (2/5) Book Detail Page
+![image](https://user-images.githubusercontent.com/55536824/204484226-6e7ca6cb-8657-4989-9807-cdef9a3b449f.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+Users can get to this page by clicking the book's title text. In this page, users can see the book's detailed information, other than the title and author, users will be able to see the book's publisher, year of publication, and the description (synopsis) of the book chosen.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+# (3/5) Category Page
+![image](https://user-images.githubusercontent.com/55536824/204484447-d56ca53c-af3f-47ec-ac6a-f625708c821c.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+This page is accessible by clicking dropdown menu from the Category navigation bar on the top, or by clicking on of the category lists on the right sidebar. After user clicked one of the category, they will be redirected to the Category page. Here user can see a list of books that is associated with that genre only. So if the user want to see what fantasy books are available, then they can click on the fantasy category.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# (4/5) Publisher List & Publisher Page
+![image](https://user-images.githubusercontent.com/55536824/204485713-37a544c3-86ef-426b-9002-7d24a3fb5ee0.png)
+![image](https://user-images.githubusercontent.com/55536824/204485833-815424fc-b41c-49f0-9aa8-9e39ca540a64.png)
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+In the publisher list page, users can see how many publishers are on Giant Book Store. Users can see general information about the publisher, such as publisher address, phone number, and email. Users can also see how many books the publisher has on the Giant Book Store.
 
-## Security Vulnerabilities
+# (5/5) Contact Page
+![image](https://user-images.githubusercontent.com/55536824/204485904-2e2eaacc-7dda-4cc4-9ae3-99fdb4a2d3b7.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+Finally, the Contact page is just a static page showing Giant Book Store's information such as address, time of operation, and contact info.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
